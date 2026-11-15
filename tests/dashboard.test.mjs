@@ -75,6 +75,6 @@ test('dashboard: navigation, filters, persistence, safe rendering and CSV', asyn
   $('#customer-search').oninput({ target: { value: 'cliente-inexistente-xyz' } });
   assert.match($('#customer-results').innerHTML, /Nenhum cliente/);
   navigate('insights');
-  assert.match($('#content').innerHTML, /Starter/);
-  assert.match($('#content').innerHTML, /Business/);
+  assert.match($('#content').innerHTML, /STARTER/);
+  assert.match($('#content').innerHTML, /BUSINESS/);
 });
